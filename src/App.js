@@ -1,10 +1,11 @@
 import React from 'react';
-import UserList from './component/UserList';
+import UserList from './component/pages/UserList/UserList';
+import Navbar from './component/pages/Navbar/Navbar';
 
 const App = () => {
   return (
     <div>
-      <h1>User List</h1>
+      <Navbar/>
       <UserList />
     </div>
   );
