@@ -1,0 +1,54 @@
+.user-list-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .search-input {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .user-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .user-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    flex: 1 1 calc(33.333% - 40px);
+    box-sizing: border-box;
+    max-width: calc(33.333% - 40px);
+  }
+  
+  .user-card h3 {
+    margin: 0 0 10px 0;
+  }
+  
+  .user-card p {
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .user-card {
+      flex: 1 1 calc(50% - 40px);
+      max-width: calc(50% - 40px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .user-card {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  }
+  
