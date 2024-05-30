@@ -22,7 +22,7 @@ const UserList = () => {
 
   return (
     <div className="user-list-container">
-      <h1>OUR USERS</h1>
+      <h1>TOP RACING DRIVERS</h1>
       <input
         type="text"
         placeholder="Search by name"
