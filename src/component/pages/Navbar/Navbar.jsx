@@ -1,15 +1,18 @@
 import React, { useState } from "react";
+import { Link } from "react-scroll";
 import "./Navbar.css";
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="Navbar">
-      <span className="nav-logo">DevLHB</span>
+      <span className="nav-logo">DILANGO</span>
       <div className={`nav-items ${isOpen && "open"}`}>
-        <a href="/home">Home</a>
-        <a href="/about">About</a>
-        <a href="/service">Service</a>
-        <a href="/contact">Contact</a>
+        <Link to="home" smooth={true} duration={500}>Home</Link>
+        <Link to="drivers" smooth={true} duration={500}>Drivers</Link>
+        <Link to="gallery" smooth={true} duration={500}>Gallery</Link>
+        <Link to="contact" smooth={true} duration={500}>Contact</Link>
       </div>
       <div
         className={`nav-toggle ${isOpen && "open"}`}
